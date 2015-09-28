@@ -1,6 +1,6 @@
-#Hong Kong Apple Store iPhone 6s/6s plus reserve checker (also support others country)
+#Hong Kong Apple Store iPhone 6s/6s plus reserve checker (also support other countries)
 
-It will check Hong Kong iPhone reserve for you(if you need others country, edit config.py), when available, send a push to you by using pushbullet
+It will check Hong Kong iPhone reserve for you(if you need other countries, edit config.py), when available, send a push to you by using pushbullet
 
 Before you go, install pushbullet client for python
 ```
