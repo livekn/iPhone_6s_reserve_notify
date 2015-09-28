@@ -35,7 +35,7 @@ try:
 
 		if availability == {}:
 			print("Reserve not available, retry in 20 minutes")
-			time.sleep(120)
+			time.sleep(1200)
 			continue
 
 		for partNumber in iPhone:
