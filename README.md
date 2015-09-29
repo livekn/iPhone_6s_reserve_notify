@@ -1,5 +1,8 @@
 #Hong Kong Apple Store iPhone 6s/6s plus reserve checker (also support other countries)
 
+[Chinese guide][4]
+[中文說明][4]
+
 It will check Hong Kong iPhone reserve for you every 10s (if you need other countries, edit config.py).
 When your phone is available, it will send you a push notification using pushbullet
 
@@ -24,3 +27,4 @@ PS: if you have InsecurePlatformWarning, solution is [here][3].
 [1]: https://www.pushbullet.com
 [2]: https://www.pushbullet.com/#settings/account
 [3]: http://stackoverflow.com/a/29202163
+[4]: http://it.livekn.com/2015/09/iphone-6s-reserve.html
