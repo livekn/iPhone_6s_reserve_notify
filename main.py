@@ -62,7 +62,7 @@ try:
 			result = "Not available"
 
 		triedTimes=triedTimes+1
-		print(str(triedTimes) + ": " + result)
+		print(time.strftime("%Y-%m-%d %H:%M:%S") + " | " + result)
 		time.sleep(10)
 
 except KeyboardInterrupt:
