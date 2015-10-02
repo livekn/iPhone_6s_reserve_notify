@@ -1,4 +1,4 @@
-from pushbullet import Pushbullet
+
 import urlparse
 import urllib
 import json
@@ -9,7 +9,9 @@ import config as c
 config = c.config()
 
 def main():
-	pb = Pushbullet(config.pushbullet_access_token)
+	if config.sendPush:
+		from pushbullet import Pushbullet
+		pb = Pushbullet(config.pushbullet_access_token)
 	iPhoneList = config.iPhoneList
 	iPhone = {}
 	triedTimes=0
@@ -51,7 +53,8 @@ def main():
 								iPhone[item]["available"]=True
 								result = result + iPhone[item]["name"] + " available!\n" + iPhone[item]["reserve_url"] + "\n"
 								if iPhone[item]["pushed"] == False:
-									push = pb.push_link(iPhone[item]["name"] + " available!", iPhone[item]["reserve_url"])
+									if config.sendPush:
+										push = pb.push_link(iPhone[item]["name"] + " available!", iPhone[item]["reserve_url"])
 									iPhone[item]["pushed"]=True
 
 			for partNumber in iPhone:

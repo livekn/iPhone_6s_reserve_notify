@@ -1,6 +1,8 @@
 class config(object):
 	pushbullet_access_token = "{your token here}"
 
+	sendPush = True
+
 	#Hong Kong iPhone reserve link, change to your country if you need
 	availability_json = "https://reserve.cdn-apple.com/HK/zh_HK/reserve/iPhone/availability.json"
 
